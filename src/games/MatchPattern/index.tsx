@@ -3,6 +3,7 @@ import './styles.css';
 import Tile from './components/Tile';
 import confetti from 'canvas-confetti';
 import Lives from './components/Lives';
+import Button from '../../components/Button';
 
 const MAX_LIVES = 3;
 const INITIAL_GRID_SIZE = 3;
@@ -97,7 +98,7 @@ const MatchPattern = () => {
         {lives === 0 && (
           <div className='lose__wrapper'>
             <p>YOU LOSE</p>
-            <button onClick={resetGame}>Play again</button>
+            <Button variant='outlined' label='Play again' onClick={resetGame} />
           </div>
         )}
         {tiles.map((_, index) => (

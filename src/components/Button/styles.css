@@ -1,0 +1,26 @@
+.button {
+  padding: 16px 32px;
+  outline: none;
+  border: 2px solid;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px var(--gold);
+  -moz-box-shadow: 0px 0px 10px 0px var(--gold);
+  box-shadow: 0px 0px 10px 0px var(--gold);
+}
+
+.--solid {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--dark-gray);
+}
+
+.--outlined {
+  background-color: transparent;
+  border-color: var(--gold);
+  color: var(--silver);
+}

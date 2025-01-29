@@ -1,6 +1,7 @@
 import { IconProps } from '../../../types/icons';
+import { colors } from '../../../utils/colors';
 
-const ChevronLeft = ({ color = '#000' }: IconProps) => {
+const ChevronLeftIcon = ({ color = colors.gold }: IconProps) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='-5.5 0 26 26'>
       <path
@@ -12,4 +13,4 @@ const ChevronLeft = ({ color = '#000' }: IconProps) => {
   );
 };
 
-export default ChevronLeft;
+export default ChevronLeftIcon;

@@ -19,17 +19,6 @@ body {
   color: var(--silver);
 }
 
-button {
-  padding: 16px 32px;
-  outline: none;
-  background-color: transparent;
-  color: var(--silver);
-  border: 2px solid var(--gold);
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
-}
-
 .container {
   max-width: 1440px;
   margin: auto;
@@ -38,27 +27,4 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.controls__wrapper {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  transform: translate(-50%, -20%);
-  cursor: pointer;
-}
-
-.controls__wrapper > svg {
-  width: 50px;
-  height: 50px;
-}
-
-.controls__text {
-  font-size: 30px;
-  text-transform: uppercase;
-  color: var(--silver);
 }

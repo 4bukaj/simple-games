@@ -1,6 +1,7 @@
 import { IconProps } from '../../../types/icons';
+import { colors } from '../../../utils/colors';
 
-const GridIcon = ({ color = '#000' }: IconProps) => {
+const GridIcon = ({ color = colors.gold }: IconProps) => {
   return (
     <svg
       viewBox='0 -0.5 21 21'

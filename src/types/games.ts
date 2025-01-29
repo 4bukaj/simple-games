@@ -1,3 +1,3 @@
-import { games } from "../utils/games"
+import { games } from '../utils/games';
 
-export type Game = (typeof games)[number]["name"]
+export type Game = (typeof games)[number]['name'] | null;

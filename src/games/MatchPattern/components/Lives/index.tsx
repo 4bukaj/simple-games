@@ -1,5 +1,5 @@
-import { colors } from '../../../../../utils/colors';
-import HeartIcon from '../../../../Icons/HeartIcon';
+import { colors } from '../../../../utils/colors';
+import HeartIcon from '../../../../components/Icons/HeartIcon';
 import './styles.css';
 
 interface LivesProps {

@@ -1,6 +1,7 @@
 import { IconProps } from '../../../types/icons';
+import { colors } from '../../../utils/colors';
 
-const PatternIcon = ({ color = '#000' }: IconProps) => {
+const PatternIcon = ({ color = colors.gold }: IconProps) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'

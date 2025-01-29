@@ -1,10 +1,10 @@
 import { IconProps } from '../../../types/icons';
+import { colors } from '../../../utils/colors';
 
-const HeartIcon = ({ color = '#000' }: IconProps) => {
+const HeartIcon = ({ color = colors.gold }: IconProps) => {
   return (
     <svg
       fill={color}
-      stroke={'red'}
       version='1.1'
       id='Capa_1'
       xmlns='http://www.w3.org/2000/svg'

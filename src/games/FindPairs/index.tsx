@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './styles.css';
 import Card from './components/Card';
 import confetti from 'canvas-confetti';
+import Button from '../../components/Button';
 
 const FindPairs = () => {
   const symbols = ['🌍', '🖥️', '☁️', '🔒', '📦', '⚙️', '🔌', '🔧'];
@@ -80,7 +81,11 @@ const FindPairs = () => {
       </div>
       {isWin && (
         <div>
-          <button onClick={handleResetGame}>Reset the game</button>
+          <Button
+            variant='outlined'
+            label='Reset the game'
+            onClick={handleResetGame}
+          />
         </div>
       )}
     </div>
