@@ -20,7 +20,7 @@ A minimal React + TypeScript app featuring a collection of simple interactive ga
 Clone the repository and install dependencies:
 
 ```sh
-  git clone https://github.com/yourusername/simple-games-app.git
+  git clone https://github.com/4bukaj/simple-games.git
   cd simple-games-app
   npm install
 ```
