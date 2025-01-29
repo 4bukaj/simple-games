@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className="container" id="container">
       {currentGame && <div className="controls__wrapper" onClick={handleBackToGameSelectClick}>
-        <ChevronLeft color={colors.mutedGold}/>
+        <ChevronLeft color={colors.gold}/>
         <p className="controls__text">Go back</p>
       </div>}
       {currentGame ? renderCurrentGame() : (

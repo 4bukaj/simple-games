@@ -5,11 +5,11 @@ import { colors } from './colors';
 export const games = [
   {
     name: 'findPairs',
-    icon: <GridIcon color={colors.mutedGold} />,
+    icon: <GridIcon color={colors.gold} />,
   },
   {
     name: 'matchPattern',
-    icon: <PatternIcon color={colors.mutedGold} />,
+    icon: <PatternIcon color={colors.gold} />,
   },
   // More games to come
 ] as const;

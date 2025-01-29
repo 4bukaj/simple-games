@@ -1,0 +1,23 @@
+.tile {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--charcoal);
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border: 4px solid var(--medium-gray);
+  font-size: 60px;
+  transition: 0.25s ease-in-out;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.tile:hover,
+.--highlighted {
+  background-color: var(--silver);
+  border-color: var(--silver);
+}
