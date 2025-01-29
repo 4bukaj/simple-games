@@ -3,8 +3,6 @@ import { IconProps } from '../../../types/icons';
 const GridIcon = ({ color = '#000' }: IconProps) => {
   return (
     <svg
-      width='800px'
-      height='800px'
       viewBox='0 -0.5 21 21'
       version='1.1'
       xmlns='http://www.w3.org/2000/svg'

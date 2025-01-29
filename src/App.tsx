@@ -1,18 +1,39 @@
-import { useState } from 'react';
-import './App.css';
-import GameTile from './components/GameTile';
-import { games } from './utils/games';
-import { Game } from './types/games';
+import React, { useState } from "react";
+import GameTile from "./components/GameTile";
+import { Game } from "./types/games";
+import { games } from "./utils/games";
+import FindPairs from "./components/Games/FindPairs";
+import MatchPattern from "./components/Games/MatchPattern";
+import "./App.css";
+import ChevronLeft from "./components/Icons/ChevronLeft";
+import { colors } from "./utils/colors";
 
 const App = () => {
-  const [currentGame, setCurrentGame] = useState<Game | null>(null);
+  const [currentGame, setCurrentGame] = useState<Game | null>(null)
+  
+  const renderCurrentGame = () => {
+    switch(currentGame) {
+      case 'findPairs':
+        return <FindPairs />
+      case 'matchPattern':
+        return <MatchPattern />
+      default:
+        return <p>No game</p>
+    }
+  }
+
+  const handleBackToGameSelectClick = () => {
+    setCurrentGame(null)
+  }
 
   return (
-    <div className='container'>
-      {currentGame ? (
-        <p>{currentGame}</p>
-      ) : (
-        <div className='games__wrapper'>
+    <div className="container" id="container">
+      {currentGame && <div className="controls__wrapper" onClick={handleBackToGameSelectClick}>
+        <ChevronLeft color={colors.mutedGold}/>
+        <p className="controls__text">Go back</p>
+      </div>}
+      {currentGame ? renderCurrentGame() : (
+        <div className="games__wrapper">
           {games.map((game) => (
             <GameTile
               key={game.name}
@@ -23,7 +44,7 @@ const App = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

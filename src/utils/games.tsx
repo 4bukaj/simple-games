@@ -1,25 +1,15 @@
-import GridIcon from '../components/icons/GridIcon';
+import GridIcon from '../components/Icons/GridIcon';
+import PatternIcon from '../components/Icons/PatternIcon';
 import { colors } from './colors';
 
 export const games = [
   {
-    name: 'tictactoe',
+    name: 'findPairs',
     icon: <GridIcon color={colors.mutedGold} />,
   },
   {
-    name: 'other',
-    icon: <GridIcon color={colors.mutedGold} />,
+    name: 'matchPattern',
+    icon: <PatternIcon color={colors.mutedGold} />,
   },
-  {
-    name: 'tictactoe',
-    icon: <GridIcon color={colors.mutedGold} />,
-  },
-  {
-    name: 'tictactoe',
-    icon: <GridIcon color={colors.mutedGold} />,
-  },
-  {
-    name: 'tictactoe',
-    icon: <GridIcon color={colors.mutedGold} />,
-  },
+  // More games to come
 ] as const;
