@@ -2,12 +2,11 @@
 
 A minimal React + TypeScript app featuring a collection of simple interactive games.
 
-## 🚀 Features
+## 🚀 Available Games
 
 - **Find Pairs**
 - **Match Pattern**
-- Responsive and sleek UI with a dark/gold theme
-- Built with React, TypeScript, and Vite for fast performance
+- **Many more to come!**
 
 ## 🛠️ Tech Stack
 
@@ -36,6 +35,7 @@ Start the development server:
 
 Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
-<!-- ## 📸 Screenshots -->
+## 📸 Screenshots
 
-![App Screenshot](https://via.placeholder.com/800x400.png?text=Screenshot+Placeholder)
+![Game Screenshot](public/screenshots/find-pairs-demo.png)
+![Game Screenshot](public/screenshots/match-pattern-demo.png)
