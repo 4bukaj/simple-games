@@ -25,7 +25,7 @@ const Keyboard = () => {
         handleEnterClick();
         break;
       default: {
-        handleLetterClick(key);
+        handleLetterClick(key.toLowerCase());
         break;
       }
     }

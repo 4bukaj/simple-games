@@ -8,3 +8,5 @@ export interface UsedLetter {
   letter: string;
   status: LetterStatus;
 }
+
+export type GameEndType = 'win' | 'lose';

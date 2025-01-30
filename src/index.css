@@ -9,6 +9,7 @@
   --silver: #a8a8a8;
   --green: #538d4f;
   --yellow: #b59f3b;
+  --red: #d32f2f;
 }
 
 * {
@@ -20,6 +21,10 @@
 body {
   background-color: var(--dark-gray);
   color: var(--silver);
+}
+
+.root {
+  position: relative;
 }
 
 .container {

@@ -8,7 +8,7 @@ interface RowProps {
 }
 
 const Row = ({ rowIndex }: RowProps) => {
-  const { word, currentRow, guesses, usedLetters, setIsWin, setUsedLetters } =
+  const { word, currentRow, guesses, usedLetters, setGameEnd, setUsedLetters } =
     useWordleContext();
 
   const checkRow = () => {
@@ -47,8 +47,8 @@ const Row = ({ rowIndex }: RowProps) => {
 
     setUsedLetters((prevState) => [...prevState, statuses]);
 
-    if (guessedWord === word) {
-      setIsWin(true);
+    if (guesses[rowIndex] === word) {
+      setGameEnd('win');
       return;
     }
   };

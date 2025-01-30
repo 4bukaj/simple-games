@@ -1,0 +1,10 @@
+.error__wrapper {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  border: 2px solid var(--red);
+  background-color: var(--dark-gray);
+  padding: 24px 48px;
+  text-transform: uppercase;
+}
