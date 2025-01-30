@@ -20,7 +20,7 @@ export const Wordle = () => {
   } = useWordleContext();
 
   useEffect(() => {
-    setWord('hello');
+    setWord('lizak');
     // const fetchWord = async () => {
     //   try {
     //     const { data } = await axios.get(

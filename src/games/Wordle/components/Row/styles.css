@@ -1,6 +1,6 @@
 .row__wrapper {
   display: flex;
-  gap: 16px;
+  gap: 10px;
   justify-content: center;
 }
 

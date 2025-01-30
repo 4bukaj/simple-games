@@ -18,9 +18,9 @@
   outline: 0;
   font-size: 20px;
   border-radius: 4px;
-  background-color: var(--gray);
+
   color: var(--white);
-  border: 1px solid var(--gray);
+  border: 1px solid;
   text-transform: uppercase;
 }
 
@@ -30,6 +30,11 @@
 
 .--enter {
   font-size: 14px;
+}
+
+.--unused {
+  background-color: var(--gray);
+  border-color: var(--gray);
 }
 
 .--incorrect {

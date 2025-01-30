@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { useWordleContext } from '../../../../context/WordleContext';
 import './styles.css';
 
@@ -10,8 +9,6 @@ const keys = [
 
 const Keyboard = () => {
   const {
-    guesses,
-    word,
     usedLetters,
     handleLetterClick,
     handleBackspaceClick,
@@ -34,6 +31,40 @@ const Keyboard = () => {
     }
   };
 
+  const getButtonStatus = (key: string) => {
+    if (
+      usedLetters.some((guess) =>
+        guess.some(
+          (letter) => letter.letter === key && letter.status === 'correct'
+        )
+      )
+    ) {
+      return 'correct';
+    }
+
+    if (
+      usedLetters.some((guess) =>
+        guess.some(
+          (letter) => letter.letter === key && letter.status === 'missplaced'
+        )
+      )
+    ) {
+      return 'missplaced';
+    }
+
+    if (
+      usedLetters.some((guess) =>
+        guess.some(
+          (letter) => letter.letter === key && letter.status === 'incorrect'
+        )
+      )
+    ) {
+      return 'incorrect';
+    }
+
+    return 'unused';
+  };
+
   return (
     <div className='wordle__keyboard'>
       {keys.map((keysRow, index) => (
@@ -43,9 +74,7 @@ const Keyboard = () => {
               key={key}
               className={`key__btn ${
                 key === '⌫' || key === 'Enter' ? '--wider' : ''
-              } ${key === 'Enter' ? '--enter' : ''}${
-                usedLetters[key] ? `--${usedLetters[key]}` : ''
-              }`}
+              } ${key === 'Enter' ? '--enter' : ''} --${getButtonStatus(key)}`}
               onClick={() => handleKeyClick(key)}
             >
               {key}

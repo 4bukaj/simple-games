@@ -5,7 +5,7 @@ import {
   useContext,
   useState,
 } from 'react';
-import { LetterStatus } from '../types/games';
+import { UsedLetter } from '../types/games';
 
 interface WordleContextProps {
   word: string;
@@ -16,8 +16,8 @@ interface WordleContextProps {
   setGuesses: Dispatch<SetStateAction<string[]>>;
   isWin: boolean;
   setIsWin: Dispatch<SetStateAction<boolean>>;
-  usedLetters: Record<string, LetterStatus>;
-  setUsedLetters: Dispatch<SetStateAction<Record<string, LetterStatus>>>;
+  usedLetters: UsedLetter[][];
+  setUsedLetters: Dispatch<SetStateAction<UsedLetter[][]>>;
   handleLetterClick: (letter: string) => void;
   handleEnterClick: () => void;
   handleBackspaceClick: () => void;
@@ -39,7 +39,7 @@ export const WordleContext = createContext<WordleContextProps>({
   setGuesses: () => {},
   isWin: false,
   setIsWin: () => {},
-  usedLetters: {},
+  usedLetters: [],
   setUsedLetters: () => {},
   handleLetterClick: () => {},
   handleEnterClick: () => {},
@@ -53,7 +53,7 @@ export const WordleContextProvider = ({
   const [currentRow, setCurrentRow] = useState(0);
   const [guesses, setGuesses] = useState(Array(ROWS).fill(''));
   const [isWin, setIsWin] = useState(false);
-  const [usedLetters, setUsedLetters] = useState({});
+  const [usedLetters, setUsedLetters] = useState([]);
 
   const handleLetterClick = (letter: string) => {
     setGuesses((prevState) => {
