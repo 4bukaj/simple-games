@@ -6,6 +6,7 @@ A minimal React + TypeScript app featuring a collection of simple interactive ga
 
 - **Find Pairs**
 - **Match Pattern**
+- **Wordle** inspired by NYT game
 - **Many more to come!**
 
 ## 🛠️ Tech Stack
@@ -39,3 +40,4 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ![Game Screenshot](public/screenshots/find-pairs-demo.png)
 ![Game Screenshot](public/screenshots/match-pattern-demo.png)
+![Game Screenshot](public/screenshots/wordle-demo.png)
