@@ -1,0 +1,48 @@
+.wordle__keyboard {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.keyboard__keys-row {
+  display: flex;
+  gap: 10px;
+}
+
+.key__btn {
+  width: 43px;
+  height: 58px;
+  cursor: pointer;
+  outline: 0;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: var(--gray);
+  color: var(--white);
+  border: 1px solid var(--gray);
+  text-transform: uppercase;
+}
+
+.--wider {
+  width: 65px;
+}
+
+.--enter {
+  font-size: 14px;
+}
+
+.--incorrect {
+  background-color: var(--medium-gray);
+  border-color: var(--medium-gray);
+}
+
+.--correct {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.--missplaced {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}

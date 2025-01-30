@@ -1,6 +1,8 @@
 import { useGamesContext } from '../../context/GamesContext';
+import { WordleContextProvider } from '../../context/WordleContext';
 import FindPairs from '../../games/FindPairs';
 import MatchPattern from '../../games/MatchPattern';
+import Wordle from '../../games/Wordle';
 import { games } from '../../utils/games';
 import GameTile from '../GameTile';
 
@@ -27,6 +29,12 @@ const GameWrapper = () => {
         return <FindPairs />;
       case 'matchPattern':
         return <MatchPattern />;
+      case 'wordle':
+        return (
+          <WordleContextProvider>
+            <Wordle />
+          </WordleContextProvider>
+        );
       default:
         return null;
     }

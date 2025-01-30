@@ -1,4 +1,5 @@
 import GridIcon from '../components/Icons/GridIcon';
+import LetterIcon from '../components/Icons/LetterIcon';
 import PatternIcon from '../components/Icons/PatternIcon';
 
 export const games = [
@@ -10,5 +11,8 @@ export const games = [
     name: 'matchPattern',
     icon: <PatternIcon />,
   },
-  // More games to come
+  {
+    name: 'wordle',
+    icon: <LetterIcon />,
+  },
 ] as const;
